@@ -1,0 +1,203 @@
+body {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.main__container {
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--color-grey-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.header__container {
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.header__mini-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--color-brand-2);
+}
+
+.username {
+  font-size: var(--font-size-2);
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-grey-7);
+}
+
+.header-button {
+  width: 169px;
+  height: 38px;
+  border-radius: var(--radius-2);
+  color: var(--color-grey-7);
+  background-color: #ffffff14;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: var(--color-grey-1);
+  border: 1px solid var(--color-grey-1);
+}
+
+.repositories-section__container {
+  margin-top: 2rem;
+}
+
+.repositories__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.repository__item {
+  height: 243px;
+  width: 44%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  transition: 0.3s;
+  border: 2px solid #ffffff1a;
+  background-color: #ffffff1a;
+  border-radius: var(--radius-2);
+}
+
+.repository__item > a {
+  width: fit-content;
+}
+
+.repository__item:hover {
+  background-color: var(--color-grey-1);
+  border: 2px solid var(--color-grey-7);
+}
+
+.repository-name {
+  color: var(--color-grey-7);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weigth-2);
+  line-height: 150%;
+}
+
+.repository-description {
+  color: #ffffff99;
+  text-align: justify;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weigth-3);
+  line-height: 150%;
+}
+
+.repository-button {
+  align-self: flex-start;
+  height: 28px;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weigth-2);
+  padding: 0px 0.5rem;
+  border-radius: var(--radius-1);
+  color: var(--color-grey-7);
+  border: 1px solid var(--color-grey-7);
+  background-color: var(--color-grey-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.repository-button:hover {
+  border: 1px solid var(--color-brand-2);
+  background-color: var(--color-brand-2);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header__container {
+    width: 95%;
+  }
+
+  .header__mini-container {
+    gap: 0.5rem;
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .repositories-section__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .repositories__container {
+    gap: 1rem;
+  }
+
+  .repository__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__container {
+    width: 95%;
+  }
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .repositories-section__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .repositories__container {
+    gap: 2rem;
+  }
+
+  .repository__item {
+    width: 42%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header__container {
+    width: 93%;
+  }
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .repositories-section__container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .repositories__container {
+    gap: 2rem;
+  }
+
+  .repository__item {
+    width: 44%;
+  }
+}
